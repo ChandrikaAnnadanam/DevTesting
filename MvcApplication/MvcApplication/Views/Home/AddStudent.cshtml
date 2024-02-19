@@ -1,0 +1,39 @@
+﻿@model Student
+<div>
+    <div>
+        @Html.BeginForm("AddStudent", "Home")
+        Student Id:
+        @Html.TextBoxFor(x => x.Id)
+        Student Name:
+        @Html.TextBoxFor(x => x.Name)
+        <button type="submit">Create</button>
+    </div>
+   @*  <label>Id</label>
+    <input placeholder ="Id" id="studentId"/>
+    <label>Name</label>
+    <input placeholder="Name" id="Name"/>
+    <div> *@
+        
+    </div>
+    
+
+</div>
+@* <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        var id = $('#studentId').val();
+        var name = $('#Name').val();
+        $("button").click(function () {
+            debugger;
+            $.post("AddStudent",JSON.stringify(
+                {
+                    Id: id,
+                    Name: name
+                }),
+                function (data, status) {
+                    alert("Data: " + data + "\nStatus: " + status);
+                });
+        });
+    });
+ 
+</script> *@
